@@ -1583,13 +1583,13 @@ export const CERTIFICATIONS_DATA: Certification[] = [
   },
   {
     id: 'cert-5',
-    name: '정보처리기능사',
+    name: '전기기능사',
     category: '기능사',
     issuer: '한국산업인력공단',
-    difficulty: 'easy',
-    passingRate: '65%',
+    difficulty: 'medium',
+    passingRate: '55%',
     examFee: '26,000원',
-    relevantFields: ['배터리', '반도체', '발전'],
+    relevantFields: ['배터리', '발전', '반도체'],
   },
   {
     id: 'cert-6',
@@ -1613,13 +1613,13 @@ export const CERTIFICATIONS_DATA: Certification[] = [
   },
   {
     id: 'cert-8',
-    name: '환경산업기사',
+    name: '공조냉동기계산업기사',
     category: '산업기사',
     issuer: '한국산업인력공단',
     difficulty: 'hard',
-    passingRate: '30%',
+    passingRate: '28%',
     examFee: '31,800원',
-    relevantFields: ['정유', '석화', '가스', '발전'],
+    relevantFields: ['설비', '발전'],
   },
   {
     id: 'cert-9',
@@ -1785,7 +1785,7 @@ export const CERTIFICATION_ROUTES: CertificationRoute[] = [
   {
     id: 'route-4',
     title: '화학분석 루트',
-    description: '화학분석 및 환경관리 전문가 경로. 화학분석부터 환경산업기사까지.',
+    description: '화학분석 및 설비관리 전문가 경로. 화학분석부터 공조냉동기계산업기사까지.',
     targetSectors: ['석화', '배터리'],
     route: ['cert-4', 'cert-8'],
     estimatedDuration: '12-18개월',
@@ -1795,7 +1795,7 @@ export const CERTIFICATION_ROUTES: CertificationRoute[] = [
   {
     id: 'route-5',
     title: '기본 취업자격 루트',
-    description: '대부분 기업에서 선호하는 기본 자격증 조합. IT와 환경 기초 마련.',
+    description: '대부분 기업에서 선호하는 기본 자격증 조합. 전기 및 환경 기초 마련.',
     targetSectors: ['정유', '석화', '가스', '배터리', '발전', '반도체'],
     route: ['cert-5', 'cert-1'],
     estimatedDuration: '9-12개월',

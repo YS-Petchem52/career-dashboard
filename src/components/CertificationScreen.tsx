@@ -125,32 +125,45 @@ export default function CertificationScreen({
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {acquiredCerts.map((cert) => (
-                <div
-                  key={cert.id}
-                  className="bg-white rounded-lg p-4 border-2 border-green-300 shadow-sm"
-                >
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h3 className="font-bold text-slate-900">{cert.name}</h3>
-                      <p className="text-xs text-slate-600 mt-1">
-                        발급기관: {cert.issuer}
-                      </p>
-                      <div className="mt-2 flex gap-2 flex-wrap">
-                        <span className="text-xs bg-slate-100 text-slate-800 px-2 py-1 rounded">
-                          {cert.category}
-                        </span>
-                        <span className={`text-xs px-2 py-1 rounded font-medium ${getDifficultyColor(
-                          cert.difficulty
-                        )}`}>
-                          {getDifficultyLabel(cert.difficulty)}
-                        </span>
+              {acquiredCerts.map((cert) => {
+                // cert-12(컴퓨터활용능력 2급)는 필기 자격증 (파란색)
+                const isWrittenTest = cert.id === 'cert-12';
+                return (
+                  <div
+                    key={cert.id}
+                    className={`bg-white rounded-lg p-4 border-2 shadow-sm ${
+                      isWrittenTest
+                        ? 'border-blue-300 bg-blue-50'
+                        : 'border-green-300'
+                    }`}
+                  >
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1">
+                        <h3 className="font-bold text-slate-900">{cert.name}</h3>
+                        <p className="text-xs text-slate-600 mt-1">
+                          발급기관: {cert.issuer}
+                        </p>
+                        {isWrittenTest && (
+                          <p className="text-xs text-blue-700 font-semibold mt-1.5">
+                            ✓ 필기 시험 합격
+                          </p>
+                        )}
+                        <div className="mt-2 flex gap-2 flex-wrap">
+                          <span className="text-xs bg-slate-100 text-slate-800 px-2 py-1 rounded">
+                            {cert.category}
+                          </span>
+                          <span className={`text-xs px-2 py-1 rounded font-medium ${getDifficultyColor(
+                            cert.difficulty
+                          )}`}>
+                            {getDifficultyLabel(cert.difficulty)}
+                          </span>
+                        </div>
                       </div>
+                      <CheckCircle size={24} className={isWrittenTest ? "text-blue-600 flex-shrink-0" : "text-green-600 flex-shrink-0"} />
                     </div>
-                    <CheckCircle size={24} className="text-green-600 flex-shrink-0" />
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
