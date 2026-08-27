@@ -6,6 +6,8 @@ import { HomeScreen } from './components/HomeScreen';
 import { SearchScreen } from './components/SearchScreen';
 import { CompanyDetailScreen } from './components/CompanyDetailScreen';
 import { MyPageScreen } from './components/MyPageScreen';
+import RecommendationScreen from './components/RecommendationScreen';
+import TrendScreen from './components/TrendScreen';
 import { JobDetailModal } from './components/JobDetailModal';
 import { ApplyModal } from './components/ApplyModal';
 import { NotificationsModal } from './components/NotificationsModal';
@@ -14,6 +16,7 @@ import {
   JOB_OPENINGS_DATA,
   INITIAL_NOTIFICATIONS,
   INITIAL_APPLICATIONS,
+  SECTOR_TRENDS,
 } from './data/mockData';
 import { JobOpening, ApplicationRecord } from './types';
 
@@ -195,6 +198,13 @@ export default function App() {
             onToggleBookmark={handleToggleBookmark}
             initialQuery={searchQuery}
           />
+        ) : activeTab === 'recommendation' ? (
+          <RecommendationScreen
+            companies={COMPANIES_DATA}
+            onSelectCompany={(company) => setSelectedCompanyId(company.id)}
+          />
+        ) : activeTab === 'trend' ? (
+          <TrendScreen trends={SECTOR_TRENDS} />
         ) : (
           <MyPageScreen
             applications={applications}

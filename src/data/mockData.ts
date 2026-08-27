@@ -1,4 +1,4 @@
-import { Company, JobOpening, NotificationItem, ApplicationRecord } from '../types';
+import { Company, JobOpening, NotificationItem, ApplicationRecord, SectorTrend } from '../types';
 
 export const LOGO_URLS = {
   gsCaltex: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpmbVn8Cl9wgs4hiJwb7pC7wq_0GFHnCMzmgrpCTGz9PSbTuQR00X80euCaZPNXq12bk0CxpO4Jpd0Jn6JQktqAuuaNuLHp4wZIpoFv2fDCd4ym4EWvVMOuAMu9SJXaEQTUGDaA2l96No4JopqHgWzMuD8ib2aASHOgzW0pr5_LBEFWZnMLcxhpZ9x5jccnFlBaAYPq_PPeAaegFYhGzJlVQ6HXU0OlGjdQMF1QDeXzZpm_xVQNLo',
@@ -37,6 +37,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['여수국가산업단지', '대기업', '에너지리더'],
     location: '전남 여수시',
     isPopularRank: 1,
+    sector: '정유',
+    characteristics: {
+      salary: 4,
+      welfare: 5,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 3,
+      stability: 5,
+    },
     description:
       '[인재상] 안전 최우선 마인드, 책임감 있는 기술인, 팀 협업 능력 우수\n[합격가이드] 안전/환경 관심, 성실한 태도, 여수지역 적응력, 기초 화학 지식 강조\n\nA global energy leader based in Yeosu National Industrial Complex, providing stable employment and top-tier welfare for Yeosu Petrochemical High School graduates. 초봉 약 6,000만원 내외, 평균 연봉 1.2억원 이상의 업계 최고 수준 처우와 4조 3교대 근무 시스템을 운영하고 있습니다.',
     businessProcess:
@@ -110,6 +119,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['석유화학', '글로벌소재', '대기업'],
     location: '전남 여수시 / 충남 서산시',
     isPopularRank: 2,
+    sector: '석화',
+    characteristics: {
+      salary: 4,
+      welfare: 4,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 5,
+      stability: 5,
+    },
     description:
       '[인재상] 글로벌 마인드, 혁신적 문제해결 능력, 안전 최우선 마인드\n[합격가이드] 기초 화학 지식, 안전의식 강조, 팀 협력 사례, 지속가능성 관심\n\n글로벌 화학 산업을 선도하는 대한민국 대표 화학 기업입니다. 기초소재부터 첨단 IT 소재, 지속가능 친환경 바이오 소재까지 사업영역을 확장하며 마이스터고 인재를 적극 채용하고 있습니다.',
     businessProcess:
@@ -174,6 +192,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['케미칼', '큐셀태양광', '여수산단'],
     location: '전남 여수시 / 울산광역시',
     isPopularRank: 3,
+    sector: '석화',
+    characteristics: {
+      salary: 4,
+      welfare: 5,
+      workLifeBalance: 3,
+      safety: 4,
+      growth: 5,
+      stability: 5,
+    },
     description:
       '[인재상] 미래지향적 사고, 환경·에너지 관심, 팀워크 우수, 학습의욕 강함\n[합격가이드] 신재생에너지 관심 표현, 기술 습득 의욕, 긍정적 태도, 팀 협력 경험\n\n케미칼과 신재생 에너지(태양광)를 융합하여 미래 지속가능 솔루션을 만들어가는 한화그룹의 핵심 기업입니다. 여수 및 울산 석유화학 콤플렉스에서 대규모 생산기지를 가동 중입니다.',
     businessProcess:
@@ -229,6 +256,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['2차전지', '양극재', '포스코그룹', '고성장'],
     location: '전남 광양시 / 경북 포항시 / 세종시',
     isPopularRank: 4,
+    sector: '배터리',
+    characteristics: {
+      salary: 4,
+      welfare: 4,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 5,
+      stability: 4,
+    },
     description:
       '[인재상] 미래 배터리 산업에 열정적, 기술 습득 의욕 높음, 협업 능력 우수\n[합격가이드] 신소재/화공 관심 표현, 기초 화학 지식, 환경/에너지 마인드, 책임감 있는 태도\n\n국내 유일 양극재·음극재를 동시 양산하는 포스코그룹의 친환경 미래소재 핵심 계열사입니다. 전기차 배터리 시장 성장에 맞춰 광양 율촌산단 및 포항 영일만산단에 대규모 증설을 진행 중입니다.',
     businessProcess:
@@ -284,6 +320,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['배터리글로벌1위', 'LG엔솔', '미래핵심'],
     location: '충북 청주시(오창) / 대전광역시',
     isPopularRank: 5,
+    sector: '배터리',
+    characteristics: {
+      salary: 4,
+      welfare: 4,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 5,
+      stability: 4,
+    },
     description:
       '[인재상] 글로벌 마인드, 정밀한 업무 수행, 스마트팩토리 이해도 높음, 문제해결 능력\n[합격가이드] 첨단기술 관심, 기초 전자/화학 지식, 오창 지역 적응력, 교대근무 가능성 강조\n\n전 세계 전기차 배터리 시장을 선도하는 글로벌 에너지 솔루션 리더입니다. 오창 마더팩토리 및 전 세계 기지에서 차세대 원통형, 파우치형 배터리를 생산하고 있습니다.',
     stats: {
@@ -339,6 +384,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['정유', '대기업', '에너지'],
     location: '인천광역시 / 대산',
     isPopularRank: 6,
+    sector: '정유',
+    characteristics: {
+      salary: 3,
+      welfare: 3,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 2,
+      stability: 4,
+    },
     description: '[인재상] 안전 최우선, 성실한 기술인, 팀 협력 능력\n[합격가이드] 정유 산업 관심, 안전/환경 의식, 책임감, 기초 화학 지식\n\n대한민국 대표 정유 기업으로 석유 정제 및 판매를 주력 사업으로 합니다.',
     stats: {
       employees: '3,500명+',
@@ -385,6 +439,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['정유', '현대그룹', '대기업'],
     location: '충남 서산시',
     isPopularRank: 7,
+    sector: '정유',
+    characteristics: {
+      salary: 3,
+      welfare: 3,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 2,
+      stability: 4,
+    },
     description: '[인재상] 현대그룹 정신, 품질 추구, 협력적 업무 자세\n[합격가이드] 정유 산업 관심, 현대그룹 비전 이해, 팀워크 사례, 지속적 학습 의욕\n\n현대그룹 정유 계열사로 고품질 석유제품을 생산하고 있습니다.',
     stats: {
       employees: '2,000명+',
@@ -426,6 +489,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['정유', 'SK그룹', '대기업', '에너지'],
     location: '울산광역시 / 인천광역시',
     isPopularRank: 8,
+    sector: '석화',
+    characteristics: {
+      salary: 4,
+      welfare: 4,
+      workLifeBalance: 3,
+      safety: 5,
+      growth: 4,
+      stability: 5,
+    },
     description: '[인재상] 혁신 마인드, 도전 정신, 글로벌 역량, 팀 협력\n[합격가이드] SK 정신 이해, 기술 습득 욕구, 글로벌 관심, 지속가능성 마인드\n\nSK그룹의 에너지 및 화학 사업을 담당하는 핵심 계열사입니다.',
     stats: {
       employees: '8,000명+',
@@ -467,6 +539,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['석유화학', '여수산단', '에너지'],
     location: '전남 여수시',
     isPopularRank: 9,
+    sector: '석화',
+    characteristics: {
+      salary: 3,
+      welfare: 3,
+      workLifeBalance: 3,
+      safety: 4,
+      growth: 3,
+      stability: 4,
+    },
     description: '[인재상] 여수 산단 헌신자, 책임감 있는 관리자, 안전의식 높음\n[합격가이드] 여수 지역 적응성, 산단 운영 관심, 기초 화학 지식, 공중보건 마인드\n\n여수 국가산업단지의 핵심 인프라를 관리하는 석유화학 운영사입니다.',
     stats: {
       employees: '500명+',
@@ -503,6 +584,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['석유화학', '롯데그룹', '대기업'],
     location: '전남 여수시 / 충남 서산시 / 울산광역시',
     isPopularRank: 10,
+    sector: '석화',
+    characteristics: {
+      salary: 3,
+      welfare: 3,
+      workLifeBalance: 3,
+      safety: 4,
+      growth: 3,
+      stability: 4,
+    },
     description: '[인재상] 글로벌 경쟁력, 창의적 사고, 성실성, 팀 정신\n[합격가이드] 화학 산업 관심, 롯데 비전 이해, 기술 습득 의욕, 안전의식 강조\n\n롯데그룹의 화학 사업을 주도하는 석유화학 공기업입니다.',
     stats: {
       employees: '5,000명+',
@@ -544,6 +634,15 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['가스', '공기업', '에너지'],
     location: '경기도 이천시 / 전국',
     isPopularRank: 11,
+    sector: '가스',
+    characteristics: {
+      salary: 4,
+      welfare: 4,
+      workLifeBalance: 4,
+      safety: 5,
+      growth: 2,
+      stability: 5,
+    },
     description: '[인재상] 공공의식 높음, 에너지 정책 관심, 안정성 추구, 책임감 있는 자세\n[합격가이드] 공공기관 적성 강조, 에너지/환경 관심, 기초 과학 지식, 지역 사회 기여 의욕\n\n대한민국 천연가스 에너지를 담당하는 국영기업입니다.',
     stats: {
       employees: '5,000명+',
@@ -1217,3 +1316,226 @@ export const INITIAL_APPLICATIONS: ApplicationRecord[] = [
     school: '여수석유화학고등학교 공정운전과',
   },
 ];
+
+export const SECTOR_TRENDS: SectorTrend[] = [
+  {
+    sector: '정유',
+    englishName: 'Refining',
+    icon: '🛢️',
+    currentStatus: '국내 정유 산업은 성숙 단계이지만 ESG와 수소 연료 전환이 핵심 전략입니다.',
+    marketSize: '약 800조 원대 (국내 및 수출)',
+    growthRate: '연평균 1-2% 성장 (전환 기간)',
+    trends: [
+      '탄소중립 2050 정책에 따른 저탄소/친환경 공정 전환',
+      'Blue Hydrogen (청정수소) 생산 기술 개발 가속화',
+      '바이오디젤, 바이오항료(SAF) 등 지속 가능한 연료로의 전환',
+      '정유소 수소 스테이션 확대 및 충전 인프라 구축',
+      '빅데이터·AI를 활용한 스마트 플랜트 자동화'
+    ],
+    opportunities: [
+      '수소 생산 및 저장 기술 엔지니어 수요 증가',
+      '정제 공정 자동화 및 IoT 전문가 채용 확대',
+      '환경 분석, 탄소 관리 직무 신규 창출',
+      '국제 수출 시장 확대에 따른 기술 영업 기회'
+    ],
+    challenges: [
+      '유가 변동성에 따른 수익성 악화',
+      '탄소세 및 규제 강화로 인한 추가 투자 부담',
+      '전기차 보급 확대로 휘발유 수요 감소',
+      '원유 정제 마진율 하락'
+    ],
+    futureOutlook: '2030년까지 정유 사업은 축소되는 추세를 보이지만, 수소·바이오연료 등 신사업 중심으로 전환할 것으로 예상됩니다. 기술 역량이 있는 인재에게는 새로운 기회의 장입니다.',
+    keyTechnologies: ['수소 제조 (SMR, 전기분해)', '탄소 포집 및 저장(CCUS)', '스마트 센서 및 AI 공정 제어', '바이오연료 생산 기술'],
+    careerOpportunities: ['공정 엔지니어', '수소 에너지 전문가', '환경/안전 관리자', '설비 자동화 기술자', '데이터 분석가'],
+    skillDemand: {
+      technical: ['공정 제어', '수소 기술', '자동화 프로그래밍', 'PLC/SCADA', 'Python, R 데이터 분석'],
+      soft: ['문제 해결', '팀워크', '리더십', '영어 의사소통', '지속 가능성 의식']
+    },
+    salaryTrend: '초봉 5,000~6,000만 원대 유지. 수소·신재생 부서는 추가 인센티브 제공 추세.',
+    jobOutlook: '기존 정유 직무는 2-3년 내 감소 예상, 하지만 수소·환경 부서는 연 20% 이상 증가 전망.'
+  },
+  {
+    sector: '석화',
+    englishName: 'Petrochemical',
+    icon: '🧪',
+    currentStatus: '글로벌 시장과 경쟁 심화 속에서 고부가가치 제품 중심 전환이 필수입니다.',
+    marketSize: '약 600조 원대 (국내)',
+    growthRate: '연평균 1-3% 성장 (제품 믹스에 따라 변동)',
+    trends: [
+      '고성능 플라스틱(엔지니어링 플라스틱) 개발 확대',
+      '바이오 기반 석화 제품(Bio-PE, Bio-PET) 상업화',
+      '순환 경제(Circular Economy): 플라스틱 재활용 기술 강화',
+      '배터리 분리막, 반도체 소재 등 고부가가치 화학품 진출',
+      '자동화된 스마트 팩토리 전환'
+    ],
+    opportunities: [
+      '고성능 신소재 개발 연구원 채용 확대',
+      '리사이클링 플랜트 엔지니어 신규 채용',
+      '소재 응용 분야 개발자 (배터리, 반도체 등)',
+      '국제 프로젝트 기술 영업 및 수출 담당자'
+    ],
+    challenges: [
+      '원유 기반 석화 산업의 구조적 쇠퇴',
+      '탄소 규제 강화로 투자 비용 증가',
+      '중국, 인도 등 신흥국 저가 제품과의 경쟁',
+      '환경 여론에 따른 플라스틱 규제 강화'
+    ],
+    futureOutlook: '2040년까지 석화 산업은 기존 제품 축소, 고부가가치 소재(배터리 재료, 반도체 재료, 바이오 플라스틱)로 급격한 전환이 진행될 것으로 예상됩니다.',
+    keyTechnologies: ['고분자 재료 과학', '생물공학 및 효소 기술', '순환 리사이클링', '배터리/반도체 소재', 'AI 기반 공정 최적화'],
+    careerOpportunities: ['공정 엔지니어', '연구 개발(R&D)', '소재 공학자', '환경/안전 관리자', '품질 관리 전문가'],
+    skillDemand: {
+      technical: ['유기화학', '고분자 화학', 'R&D 실험 기술', '공정 설계', '데이터 분석'],
+      soft: ['창의성', '과제 해결 능력', '국제 협상', '영어/중국어', '지속 가능성 마인드']
+    },
+    salaryTrend: '초봉 5,200~6,500만 원대. R&D 부서는 성과에 따라 인센티브 30-50% 추가.',
+    jobOutlook: '기존 공정직은 연 5-10% 감소, R&D와 고부가가치 소재 부서는 연 15-20% 증가 전망.'
+  },
+  {
+    sector: '가스',
+    englishName: 'Natural Gas & LNG',
+    icon: '⛽',
+    currentStatus: '에너지 다원화 시대에 천연가스는 중간 연료로서의 역할 강화하고 있습니다.',
+    marketSize: '약 300조 원대 (LNG 수입 및 도시가스)',
+    growthRate: '연평균 0-2% 안정적 성장',
+    trends: [
+      'LNG 기지 적기(floating regasification terminal, FSRU) 도입 확대',
+      '수소와의 혼합 공급(H-Ready 인프라) 준비',
+      '메탄 누출 감시 및 친환경 운영 강화',
+      '스마트 가스 관망 및 IoT 센서 네트워크 구축',
+      '바이오메탄(바이오가스 활용) 사업 진출'
+    ],
+    opportunities: [
+      '가스 파이프라인 및 저장소 엔지니어 채용',
+      '안전/검사 전문가(가스 누출 감지) 신규 수요',
+      'LNG 터미널 운영 전문가 양성',
+      '수소 공급망 구축 프로젝트 참여'
+    ],
+    challenges: [
+      '천연가스 수입 의존도로 인한 국제 정세 영향',
+      '재정 에너지로의 전환에 따른 장기 수요 감소',
+      '파이프라인 노후화 및 교체 투자 부담',
+      '안전 사고 위험(가스 누출, 폭발 등)'
+    ],
+    futureOutlook: '2050년까지 천연가스의 비중은 감소하지만, 재생에너지 보급이 완성될 때까지 중간 연료로서 필수적입니다. 안정적인 에너지 산업이지만 성장성은 제한적입니다.',
+    keyTechnologies: ['LNG 저장 및 운송', '가스 검측 및 센서', '파이프라인 부식 관리', '수소 혼합 기술', 'IoT/스마트 모니터링'],
+    careerOpportunities: ['가스 설비 운영자', '파이프라인 엔지니어', '안전 검사관', '환경 감시원', '프로젝트 엔지니어'],
+    skillDemand: {
+      technical: ['가스 공학', '파이프라인 설계', '센서 기술', 'SCADA 시스템', '기계 정비'],
+      soft: ['안전 의식', '철저한 점검 능력', '팀 협업', '기술 문서 작성', '영어']
+    },
+    salaryTrend: '초봉 4,500~5,500만 원대. 공기업 특성상 연공서열 중시.',
+    jobOutlook: '기본 수요는 안정적이나 신규 채용은 연 3-5% 소폭 증가에 불과함.'
+  },
+  {
+    sector: '배터리',
+    englishName: 'Secondary Battery',
+    icon: '🔋',
+    currentStatus: '글로벌 EV 시장 폭발적 성장으로 2차 전지 산업은 한국 경제의 미래 먹거리입니다.',
+    marketSize: '약 1,200조 원대 (2030년 예상, 현재 400조원)',
+    growthRate: '연평균 15-25% 고속 성장',
+    trends: [
+      '고에너지 밀도 고니켈 배터리(니켈 90% 이상) 개발 경쟁',
+      'Solid-State Battery(고체 전지) 상용화 추진 (2027-2030년)',
+      '배터리 재활용(배터리 백사이클링) 기술 고도화',
+      '미국, EU의 공급망 현지화 요구에 따른 해외 공장 확대',
+      '셀부터 팩, 열관리 통합 솔루션 제공'
+    ],
+    opportunities: [
+      '배터리 엔지니어 채용 폭발적 증가 (연 30% 이상)',
+      '고체 전지 R&D 인재 초대형 수요',
+      '배터리 팩 설계 및 열관리 전문가',
+      '품질/신뢰성 검사 전문가',
+      '공급망 관리 및 글로벌 프로젝트 직무'
+    ],
+    challenges: [
+      '기술 개발 속도 전쟁 (중국 CATL, BYD의 맹추격)',
+      '원자재(니켈, 코발트, 리튬) 수급 불안정',
+      '과잉 투자로 인한 수익성 악화 위험',
+      '안전성 문제 (화재, 폭발 사고)'
+    ],
+    futureOutlook: '2030년 배터리 산업은 한국 GDP의 3-4%를 차지할 것으로 예상됩니다. 기술 인재에 대한 수요가 매우 높으며, 초기 경력자도 빠른 승진 기회가 있습니다.',
+    keyTechnologies: ['고니켈 양극재 합성', '고체 전해질 기술', '배터리 열관리(BMS)', '팩 설계 및 안전', '폐배터리 재활용'],
+    careerOpportunities: ['배터리 공정 엔지니어', '소재 과학자', '전자 회로 설계자', '열관리 전문가', 'AI/빅데이터 분석가'],
+    skillDemand: {
+      technical: ['화학 공학', '전자 공학', '재료 과학', 'CAD/시뮬레이션', 'Python, C++ 프로그래밍'],
+      soft: ['빠른 학습 능력', '국제 협업', '혁신 마인드', '영어/중국어', '품질 의식']
+    },
+    salaryTrend: '초봉 5,500~7,500만 원대 (타산업 대비 20-30% 높음). 성과급 30-80% 추가.',
+    jobOutlook: '2026-2030년 연 25-35% 고속 채용 확대 예상. 신입도 환영하는 인재 수급 부족 상황.'
+  },
+  {
+    sector: '발전',
+    englishName: 'Power Generation',
+    icon: '⚡',
+    currentStatus: '2050 탄소중립을 위해 재생에너지 중심 에너지 체계로 급속 전환 중입니다.',
+    marketSize: '약 500조 원대 (발전 + 송배전)',
+    growthRate: '연평균 2-3% (기존), 재생에너지는 연 15-20% 성장',
+    trends: [
+      '태양광·풍력 발전 용량 급증 (2030년까지 70% 이상)',
+      '수소 발전 기술 개발 및 파일럿 사업 추진',
+      '전력계통 안정화를 위한 ESS(에너지 저장) 대규모 도입',
+      '스마트 그리드 및 AI 기반 에너지 최적화',
+      '계절별 에너지 저장(계절용 배터리) 기술 개발'
+    ],
+    opportunities: [
+      '재생에너지 발전 설비 엔지니어 급증 수요',
+      '전력망 안정화 및 스마트 그리드 인재 채용',
+      'ESS 운영 및 유지보수 전문가',
+      'AI 기반 발전량 예측 및 최적화 전문가',
+      '해상풍력 설치 및 운영 기술자'
+    ],
+    challenges: [
+      '재생에너지의 간헐성(날씨 의존)으로 인한 계통 불안정성',
+      '전력 저장 기술의 비용 문제',
+      '기존 화석연료 발전소 노후화 및 구조조정',
+      '지역 주민 반발 (태양광, 풍력 입지 갈등)'
+    ],
+    futureOutlook: '2030년까지 재생에너지 발전 비중이 50% 이상으로 확대될 것으로 예상됩니다. 기존 발전 인력은 감소하지만, 재생에너지와 그리드 기술 인재는 급증할 것입니다.',
+    keyTechnologies: ['태양광 및 풍력 시스템', '에너지 저장 시스템(ESS)', '전력 계통 제어', '수소 발전', 'AI 기반 수급 예측'],
+    careerOpportunities: ['풍력/태양광 발전소 운영자', '전력계통 엔지니어', 'ESS 기술자', '재생에너지 컨설턴트', '데이터 분석가'],
+    skillDemand: {
+      technical: ['전기 공학', 'PLC 제어', '신재생에너지 기술', 'GIS 및 전산 시뮬레이션', 'Python 데이터 분석'],
+      soft: ['문제 해결', '안전 의식', '친환경 마인드', '팀 협업', '기술 문서 작성']
+    },
+    salaryTrend: '초봉 4,500~6,000만 원대. 공기업/준정부 기관 특성상 복지 우수.',
+    jobOutlook: '기존 화석 발전소 폐지로 감소하나, 재생에너지 부서에서 연 10-15% 증가 예상.'
+  },
+  {
+    sector: '반도체',
+    englishName: 'Semiconductor',
+    icon: '🔌',
+    currentStatus: '한국 반도체 산업은 메모리 반도체에서 세계 1위이지만, AI 칩 경쟁에서 추격 중입니다.',
+    marketSize: '약 600조 원대 (2025년), 글로벌 수조 시장의 10-12% 차지',
+    growthRate: '연평균 5-8% 성장 (AI 칩 중심)',
+    trends: [
+      'AI 가속기 칩(NPU, GPU) 개발 경쟁 심화',
+      'HBM(High Bandwidth Memory) 초고속 메모리 대량 생산 시작',
+      'CoWoS(칩 온 웨이퍼 스택) 패키징 기술 고도화',
+      '미국 반도체 재정 지원법(CHIPS Act)에 따른 현지화 생산',
+      'AI 데이터센터용 초고집적 칩 수요 폭증'
+    ],
+    opportunities: [
+      'AI 칩 설계 엔지니어 채용 급증',
+      '반도체 공정 엔지니어 (미세공정 3nm, 2nm) 고급 인재',
+      '패키징 및 테스트 기술자 신규 채용',
+      'AI/머신러닝 기반 불량 검사 전문가',
+      '공급망 관리 및 글로벌 프로젝트 엔지니어'
+    ],
+    challenges: [
+      '대만 TSMC와의 기술 격차 (EUV 공정 미세화)',
+      '미국의 대중국 반도체 수출 규제로 인한 수출 제한',
+      '막대한 R&D 및 설비 투자 비용',
+      '엔지니어 부족(석박사 인재 경쟁 심화)'
+    ],
+    futureOutlook: '2030년까지 반도체 산업은 계속 성장할 것이지만, AI 칩 경쟁에서 우위를 유지하려면 혁신 인재와 과감한 투자가 필수입니다. 높은 연봉과 빠른 성장이 가능한 산업입니다.',
+    keyTechnologies: ['반도체 공정(CMOS, 3D NAND)', 'EUV 리소그래피', 'AI 칩 설계', 'HBM 메모리', '양자 컴퓨팅'],
+    careerOpportunities: ['반도체 공정 엔지니어', '칩 설계 엔지니어', '품질 검사 전문가', '팹 운영 관리자', 'AI 기반 분석가'],
+    skillDemand: {
+      technical: ['전자 공학', 'VLSI 설계', '공정 물리학', 'C/C++/Python', '통계 분석'],
+      soft: ['국제 협업', '창의적 문제 해결', '기술 리더십', '영어/중국어', '혁신 사고']
+    },
+    salaryTrend: '초봉 6,000~8,000만 원대 (산업 내 최고 수준). 성과급 40-100% 추가.',
+    jobOutlook: '2025-2030년 연 15-25% 고속 채용 확대. 석박사 인재도 부족한 상황.'
+  }
+];
+
