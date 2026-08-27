@@ -30,13 +30,13 @@ export const MyPageScreen: React.FC<MyPageScreenProps> = ({
       <section className="bg-[#ffffff] rounded-xl border border-[#c3c6d6]/40 p-5 mb-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-full bg-[#003d9b] text-white flex items-center justify-center text-xl font-bold border-2 border-[#b2c5ff]">
-            석유
+            철현
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h2 className="text-xl font-bold text-[#041b3c]">김석유</h2>
+              <h2 className="text-xl font-bold text-[#041b3c]">임철현</h2>
               <span className="text-xs bg-[#006477] text-white px-2 py-0.5 rounded-full font-semibold">
-                마이스터고 3학년
+                공정운전과 2학년
               </span>
             </div>
             <p className="text-xs text-[#434654] mt-0.5">
