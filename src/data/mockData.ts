@@ -64,6 +64,7 @@ export const LOGO_URLS = {
   horserace: 'https://via.placeholder.com/200x120?text=Korea+Horse+Racing',
   enf: 'https://via.placeholder.com/200x120?text=ENF+Technology',
   government: 'https://via.placeholder.com/200x120?text=Civil+Service',
+  ecopro: 'https://via.placeholder.com/200x120?text=EcoPro',
 };
 
 export const COMPANIES_DATA: Company[] = [
@@ -716,7 +717,7 @@ export const COMPANIES_DATA: Company[] = [
   },
   {
     id: 'erc',
-    name: '남부발전',
+    name: '한국남부발전',
     englishName: 'Korea Southern Power Co., Ltd',
     logo: LOGO_URLS.erc,
     industry: '에너지',
@@ -724,7 +725,10 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['발전', '공기업', '에너지'],
     location: '전남 여수시',
     isPopularRank: 12,
+    sector: '발전',
+    characteristics: { salary: 4, welfare: 5, workLifeBalance: 4, safety: 5, growth: 2, stability: 5 },
     description: '[인재상] 안정성 추구, 공공 정신 높음, 성실함, 팀 협력 능력\n[합격가이드] 전기/기계 기초 지식, 공기업 적성, 여수 지역 근무 가능성, 교대근무 의지\n\n남부지역 전력 공급을 담당하는 발전 자회사입니다.',
+    businessProcess: '📍 사업 내용:\n- 남부지역 전력 생산\n- 발전소 운영 및 관리\n- 안정적 에너지 공급',
     stats: {
       employees: '1,500명+',
       avgSalary: '8,500만+',
@@ -752,7 +756,7 @@ export const COMPANIES_DATA: Company[] = [
   },
   {
     id: 'ecom',
-    name: '남동발전',
+    name: '한국남동발전',
     englishName: 'Korea Southern East Power Co., Ltd',
     logo: LOGO_URLS.ecom,
     industry: '에너지',
@@ -760,7 +764,10 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['발전', '공기업', '에너지'],
     location: '인천광역시 / 충남 당진시',
     isPopularRank: 13,
+    sector: '발전',
+    characteristics: { salary: 4, welfare: 5, workLifeBalance: 4, safety: 5, growth: 2, stability: 5 },
     description: '남동부지역 전력 공급을 담당하는 발전 자회사입니다.',
+    businessProcess: '📍 사업 내용:\n- 남동부지역 전력 생산\n- 발전소 운영 및 관리\n- 안정적 에너지 공급',
     stats: {
       employees: '1,200명+',
       avgSalary: '8,500만+',
@@ -779,7 +786,7 @@ export const COMPANIES_DATA: Company[] = [
   },
   {
     id: 'ewp',
-    name: '서부발전',
+    name: '한국서부발전',
     englishName: 'Korea Western Power Co., Ltd',
     logo: LOGO_URLS.ewp,
     industry: '에너지',
@@ -787,7 +794,10 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['발전', '공기업', '에너지'],
     location: '전북 전주시 / 전남 목포시',
     isPopularRank: 14,
+    sector: '발전',
+    characteristics: { salary: 4, welfare: 5, workLifeBalance: 4, safety: 5, growth: 2, stability: 5 },
     description: '서부지역 전력 공급을 담당하는 발전 자회사입니다.',
+    businessProcess: '📍 사업 내용:\n- 서부지역 전력 생산\n- 발전소 운영 및 관리\n- 안정적 에너지 공급',
     stats: {
       employees: '1,000명+',
       avgSalary: '8,300만+',
@@ -806,7 +816,7 @@ export const COMPANIES_DATA: Company[] = [
   },
   {
     id: 'ecp',
-    name: '중부발전',
+    name: '한국중부발전',
     englishName: 'Korea Central Power Co., Ltd',
     logo: LOGO_URLS.ecom,
     industry: '에너지',
@@ -814,7 +824,10 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['발전', '공기업', '에너지'],
     location: '충북 제천시 / 충남 보령시',
     isPopularRank: 15,
+    sector: '발전',
+    characteristics: { salary: 4, welfare: 5, workLifeBalance: 4, safety: 5, growth: 2, stability: 5 },
     description: '중부지역 전력 공급을 담당하는 발전 자회사입니다.',
+    businessProcess: '📍 사업 내용:\n- 중부지역 전력 생산\n- 발전소 운영 및 관리\n- 안정적 에너지 공급',
     stats: {
       employees: '1,100명+',
       avgSalary: '8,400만+',
@@ -833,7 +846,7 @@ export const COMPANIES_DATA: Company[] = [
   },
   {
     id: 'edp',
-    name: '동서발전',
+    name: '한국동서발전',
     englishName: 'Korea East-West Power Co., Ltd',
     logo: LOGO_URLS.edp,
     industry: '에너지',
@@ -841,7 +854,10 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['발전', '공기업', '에너지'],
     location: '강원도 삼척시 / 경주시',
     isPopularRank: 16,
+    sector: '발전',
+    characteristics: { salary: 4, welfare: 5, workLifeBalance: 4, safety: 5, growth: 2, stability: 5 },
     description: '동서부지역 전력 공급을 담당하는 발전 자회사입니다.',
+    businessProcess: '📍 사업 내용:\n- 동서부지역 전력 생산\n- 발전소 운영 및 관리\n- 안정적 에너지 공급',
     stats: {
       employees: '1,300명+',
       avgSalary: '8,500만+',
@@ -868,6 +884,8 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['석유', '공기업', '에너지'],
     location: '서울특별시 / 울산광역시',
     isPopularRank: 17,
+    sector: '정유',
+    characteristics: { salary: 4, welfare: 5, workLifeBalance: 3, safety: 5, growth: 2, stability: 5 },
     description: '석유 및 천연가스 자원 개발을 담당하는 국영기업입니다.',
     stats: {
       employees: '1,500명+',
@@ -895,6 +913,8 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['전력', '공기업', '에너지'],
     location: '서울특별시 / 전국',
     isPopularRank: 18,
+    sector: '발전',
+    characteristics: { salary: 3, welfare: 5, workLifeBalance: 4, safety: 5, growth: 2, stability: 5 },
     description: '한국전력공사의 자회사로 전력 관련 서비스를 담당합니다.',
     stats: {
       employees: '2,000명+',
@@ -1017,6 +1037,8 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['환경', '신재생', '에너지'],
     location: '서울특별시 / 전국',
     isPopularRank: 22,
+    sector: '기타',
+    characteristics: { salary: 3, welfare: 4, workLifeBalance: 4, safety: 4, growth: 3, stability: 4 },
     description: '신재생에너지 및 환경 관련 사업을 담당하는 기업입니다.',
     stats: {
       employees: '1,000명+',
@@ -1044,6 +1066,8 @@ export const COMPANIES_DATA: Company[] = [
     tags: ['화학', '다국적', '첨단소재'],
     location: '울산광역시',
     isPopularRank: 23,
+    sector: '석화',
+    characteristics: { salary: 5, welfare: 4, workLifeBalance: 3, safety: 5, growth: 3, stability: 4 },
     description: '[인재상] 글로벌 마인드, 창의적 사고, 안전 중심 태도, 지속가능성 추구\n[합격가이드] 화학/공학 기초 지식, 안전 의식, 글로벌 기업 경험 선호, 친환경 가치관\n\n세계 최대 화학 기업 BASF의 한국 법인으로 첨단화학을 담당합니다.',
     stats: {
       employees: '1,500명+',
@@ -1839,6 +1863,25 @@ export const COMPANIES_DATA: Company[] = [
     benefits: [ { icon: 'laptop', title: 'IT 복지', description: '기술 교육 지원' } ],
     reviews: [ { id: 'rev-1', rating: 4.0, date: '2023.06.20', role: '개발자', title: 'IT 기업', content: '기술 역량 개발에 좋은 환경입니다.' } ],
     openingsCount: 1,
+  },
+  {
+    id: 'ecopro',
+    name: '에코프로',
+    englishName: 'EcoPro',
+    logo: LOGO_URLS.ecopro,
+    industry: '배터리 · 소재',
+    industryDetail: '배터리 소재 및 부품 (Battery Materials)',
+    tags: ['대기업', '배터리', '글로벌'],
+    location: '경기 화성시 / 포항시',
+    isPopularRank: 0,
+    sector: '배터리',
+    characteristics: { salary: 5, welfare: 4, workLifeBalance: 2, safety: 4, growth: 5, stability: 4 },
+    description: '[인재상] 혁신, 기술 역량, 글로벌 경쟁력\n[합격가이드] 화학/재료 기초, 문제해결 능력, 영어\n\n전기차 배터리 소재의 글로벌 선두 기업입니다.',
+    businessProcess: '📍 사업 내용:\n- 양극재 및 음극재 생산\n- 배터리 부품 제조\n- 글로벌 수출 판매',
+    stats: { employees: '5,000명+', avgSalary: '1.2억+', establishedYear: '2001년', shiftSystem: '4조 3교대' },
+    benefits: [ { icon: 'battery', title: '최고 연봉', description: '업계 최고 수준 연봉 및 복지' } ],
+    reviews: [ { id: 'rev-1', rating: 4.5, date: '2023.11.30', role: '공정엔지니어', title: '전기차 배터리 소재 선도', content: '글로벌 배터리 시장에서 핵심 기업입니다.' } ],
+    openingsCount: 2,
   },
 ];
 
