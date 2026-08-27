@@ -1325,6 +1325,7 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     currentStatus: '국내 정유 산업은 성숙 단계이지만 ESG와 수소 연료 전환이 핵심 전략입니다.',
     marketSize: '약 800조 원대 (국내 및 수출)',
     growthRate: '연평균 1-2% 성장 (전환 기간)',
+    outlookStatus: 'caution',
     trends: [
       '탄소중립 2050 정책에 따른 저탄소/친환경 공정 전환',
       'Blue Hydrogen (청정수소) 생산 기술 개발 가속화',
@@ -1361,6 +1362,7 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     currentStatus: '글로벌 시장과 경쟁 심화 속에서 고부가가치 제품 중심 전환이 필수입니다.',
     marketSize: '약 600조 원대 (국내)',
     growthRate: '연평균 1-3% 성장 (제품 믹스에 따라 변동)',
+    outlookStatus: 'neutral',
     trends: [
       '고성능 플라스틱(엔지니어링 플라스틱) 개발 확대',
       '바이오 기반 석화 제품(Bio-PE, Bio-PET) 상업화',
@@ -1397,6 +1399,7 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     currentStatus: '에너지 다원화 시대에 천연가스는 중간 연료로서의 역할 강화하고 있습니다.',
     marketSize: '약 300조 원대 (LNG 수입 및 도시가스)',
     growthRate: '연평균 0-2% 안정적 성장',
+    outlookStatus: 'caution',
     trends: [
       'LNG 기지 적기(floating regasification terminal, FSRU) 도입 확대',
       '수소와의 혼합 공급(H-Ready 인프라) 준비',
@@ -1433,6 +1436,7 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     currentStatus: '글로벌 EV 시장 폭발적 성장으로 2차 전지 산업은 한국 경제의 미래 먹거리입니다.',
     marketSize: '약 1,200조 원대 (2030년 예상, 현재 400조원)',
     growthRate: '연평균 15-25% 고속 성장',
+    outlookStatus: 'positive',
     trends: [
       '고에너지 밀도 고니켈 배터리(니켈 90% 이상) 개발 경쟁',
       'Solid-State Battery(고체 전지) 상용화 추진 (2027-2030년)',
@@ -1470,6 +1474,7 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     currentStatus: '2050 탄소중립을 위해 재생에너지 중심 에너지 체계로 급속 전환 중입니다.',
     marketSize: '약 500조 원대 (발전 + 송배전)',
     growthRate: '연평균 2-3% (기존), 재생에너지는 연 15-20% 성장',
+    outlookStatus: 'neutral',
     trends: [
       '태양광·풍력 발전 용량 급증 (2030년까지 70% 이상)',
       '수소 발전 기술 개발 및 파일럿 사업 추진',
@@ -1507,6 +1512,7 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     currentStatus: '한국 반도체 산업은 메모리 반도체에서 세계 1위이지만, AI 칩 경쟁에서 추격 중입니다.',
     marketSize: '약 600조 원대 (2025년), 글로벌 수조 시장의 10-12% 차지',
     growthRate: '연평균 5-8% 성장 (AI 칩 중심)',
+    outlookStatus: 'positive',
     trends: [
       'AI 가속기 칩(NPU, GPU) 개발 경쟁 심화',
       'HBM(High Bandwidth Memory) 초고속 메모리 대량 생산 시작',

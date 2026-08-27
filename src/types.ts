@@ -14,6 +14,7 @@ export interface SectorTrend {
   currentStatus: string; // 현재 상태 요약
   marketSize: string; // 시장 규모
   growthRate: string; // 성장률
+  outlookStatus: 'positive' | 'neutral' | 'caution'; // 미래 전망: 긍정 | 중립 | 주의
   trends: string[]; // 주요 트렌드 (배열)
   opportunities: string[]; // 기회 요인
   challenges: string[]; // 도전 요인

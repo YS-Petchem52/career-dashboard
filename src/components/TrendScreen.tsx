@@ -30,6 +30,31 @@ export default function TrendScreen({ trends }: TrendScreenProps) {
     return 'text-gray-600';
   };
 
+  const getOutlookBadge = (status: 'positive' | 'neutral' | 'caution') => {
+    switch (status) {
+      case 'positive':
+        return {
+          label: '🌟 미래가 창창',
+          color: 'bg-green-100 text-green-800',
+        };
+      case 'neutral':
+        return {
+          label: '📊 변화 중',
+          color: 'bg-blue-100 text-blue-800',
+        };
+      case 'caution':
+        return {
+          label: '⚠️ 주의 필요',
+          color: 'bg-orange-100 text-orange-800',
+        };
+      default:
+        return {
+          label: '📈 분석 중',
+          color: 'bg-gray-100 text-gray-800',
+        };
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 pb-24">
       {/* Header */}
@@ -93,6 +118,9 @@ export default function TrendScreen({ trends }: TrendScreenProps) {
                     {trend.growthRate}
                   </p>
                   <p className="text-xs text-slate-600">성장률</p>
+                </div>
+                <div className={`text-xs font-medium px-2.5 py-1 rounded-full ${getOutlookBadge(trend.outlookStatus).color}`}>
+                  {getOutlookBadge(trend.outlookStatus).label}
                 </div>
                 <ChevronDown
                   size={20}
