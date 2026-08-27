@@ -49,7 +49,7 @@ export const Header: React.FC<HeaderProps> = ({
           className="text-left group cursor-pointer focus:outline-none"
         >
           <h1 className="font-['Hanken_Grotesk'] text-2xl md:text-[26px] font-bold text-[#003d9b] tracking-tight group-hover:opacity-90 transition-opacity">
-            취업알리미
+            석화고 취업길잡이
           </h1>
         </button>
 

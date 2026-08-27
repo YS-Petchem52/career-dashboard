@@ -1,5 +1,5 @@
 {
-  "name": "취업알리미",
+  "name": "석화고 취업길잡이",
   "description": "마이스터고 및 이공계 취업 준비생을 위한 정유·석유화학·2차전지 기업 채용 정보 및 기업 분석 알리미 플랫폼",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

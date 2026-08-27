@@ -184,8 +184,8 @@ export const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
 
         {/* Footer */}
         <div className="p-4 border-t border-[#c3c6d6]/40 bg-[#f9f9ff] text-xs text-[#737685] flex justify-between items-center">
-          <span>취업알리미 v2.4.0</span>
-          <span>© 2026 여수산단 취업알리미</span>
+          <span>석화고 취업길잡이 v2.4.0</span>
+          <span>© 2026 여수산단 석화고 취업길잡이</span>
         </div>
       </div>
     </div>
