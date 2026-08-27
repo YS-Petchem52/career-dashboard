@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type TabType = 'home' | 'search' | 'recommendation' | 'trend' | 'mypage';
+export type TabType = 'home' | 'search' | 'recommendation' | 'trend' | 'certification' | 'mypage';
 
 interface BottomNavBarProps {
   activeTab: TabType;
@@ -102,6 +102,26 @@ export const BottomNavBar: React.FC<BottomNavBarProps> = ({ activeTab, onChangeT
           }`}
         >
           트렌드
+        </span>
+      </button>
+
+      {/* Certification Tab */}
+      <button
+        id="nav-tab-certification"
+        onClick={() => onChangeTab('certification')}
+        className={`flex flex-col items-center justify-center transition-all duration-200 cursor-pointer ${
+          activeTab === 'certification'
+            ? 'bg-[#0052cc] text-[#c4d2ff] rounded-full px-5 py-1.5 shadow-sm scale-100'
+            : 'text-[#434654] p-2 hover:text-[#003d9b]'
+        }`}
+      >
+        <span className="text-[22px]">🏆</span>
+        <span
+          className={`text-[12px] font-medium mt-0.5 leading-none ${
+            activeTab === 'certification' ? 'text-white font-semibold' : ''
+          }`}
+        >
+          자격증
         </span>
       </button>
 

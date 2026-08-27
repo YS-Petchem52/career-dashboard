@@ -8,6 +8,7 @@ import { CompanyDetailScreen } from './components/CompanyDetailScreen';
 import { MyPageScreen } from './components/MyPageScreen';
 import RecommendationScreen from './components/RecommendationScreen';
 import TrendScreen from './components/TrendScreen';
+import CertificationScreen from './components/CertificationScreen';
 import { JobDetailModal } from './components/JobDetailModal';
 import { ApplyModal } from './components/ApplyModal';
 import { NotificationsModal } from './components/NotificationsModal';
@@ -17,6 +18,9 @@ import {
   INITIAL_NOTIFICATIONS,
   INITIAL_APPLICATIONS,
   SECTOR_TRENDS,
+  CERTIFICATIONS_DATA,
+  USER_CERTIFICATIONS,
+  CERTIFICATION_ROUTES,
 } from './data/mockData';
 import { JobOpening, ApplicationRecord } from './types';
 
@@ -205,6 +209,12 @@ export default function App() {
           />
         ) : activeTab === 'trend' ? (
           <TrendScreen trends={SECTOR_TRENDS} />
+        ) : activeTab === 'certification' ? (
+          <CertificationScreen
+            certifications={CERTIFICATIONS_DATA}
+            userCertifications={USER_CERTIFICATIONS}
+            routes={CERTIFICATION_ROUTES}
+          />
         ) : (
           <MyPageScreen
             applications={applications}

@@ -1,4 +1,4 @@
-import { Company, JobOpening, NotificationItem, ApplicationRecord, SectorTrend } from '../types';
+import { Company, JobOpening, NotificationItem, ApplicationRecord, SectorTrend, Certification, UserCertification, CertificationRoute } from '../types';
 
 export const LOGO_URLS = {
   gsCaltex: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpmbVn8Cl9wgs4hiJwb7pC7wq_0GFHnCMzmgrpCTGz9PSbTuQR00X80euCaZPNXq12bk0CxpO4Jpd0Jn6JQktqAuuaNuLHp4wZIpoFv2fDCd4ym4EWvVMOuAMu9SJXaEQTUGDaA2l96No4JopqHgWzMuD8ib2aASHOgzW0pr5_LBEFWZnMLcxhpZ9x5jccnFlBaAYPq_PPeAaegFYhGzJlVQ6HXU0OlGjdQMF1QDeXzZpm_xVQNLo',
@@ -1537,5 +1537,181 @@ export const SECTOR_TRENDS: SectorTrend[] = [
     salaryTrend: '초봉 6,000~8,000만 원대 (산업 내 최고 수준). 성과급 40-100% 추가.',
     jobOutlook: '2025-2030년 연 15-25% 고속 채용 확대. 석박사 인재도 부족한 상황.'
   }
+];
+
+// ===== 자격증 데이터 =====
+export const CERTIFICATIONS_DATA: Certification[] = [
+  {
+    id: 'cert-1',
+    name: '산업안전기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'medium',
+    passingRate: '45%',
+    examFee: '26,000원',
+    relevantFields: ['정유', '석화', '가스', '발전', '기타'],
+  },
+  {
+    id: 'cert-2',
+    name: '환경기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'medium',
+    passingRate: '48%',
+    examFee: '26,000원',
+    relevantFields: ['정유', '석화', '가스', '발전'],
+  },
+  {
+    id: 'cert-3',
+    name: '화학기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'medium',
+    passingRate: '52%',
+    examFee: '26,000원',
+    relevantFields: ['석화', '배터리', '반도체'],
+  },
+  {
+    id: 'cert-4',
+    name: '기계기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'medium',
+    passingRate: '50%',
+    examFee: '26,000원',
+    relevantFields: ['정유', '석화', '발전', '기타'],
+  },
+  {
+    id: 'cert-5',
+    name: '전기기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'medium',
+    passingRate: '55%',
+    examFee: '26,000원',
+    relevantFields: ['배터리', '발전', '반도체'],
+  },
+  {
+    id: 'cert-6',
+    name: '유기화학기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'hard',
+    passingRate: '35%',
+    examFee: '26,000원',
+    relevantFields: ['석화'],
+  },
+  {
+    id: 'cert-7',
+    name: '정보처리기능사',
+    category: '기능사',
+    issuer: '한국산업인력공단',
+    difficulty: 'easy',
+    passingRate: '65%',
+    examFee: '26,000원',
+    relevantFields: ['배터리', '반도체', '발전'],
+  },
+  {
+    id: 'cert-8',
+    name: '산업안전산업기사',
+    category: '산업기사',
+    issuer: '한국산업인력공단',
+    difficulty: 'hard',
+    passingRate: '28%',
+    examFee: '31,800원',
+    relevantFields: ['정유', '석화', '가스', '발전', '기타'],
+  },
+  {
+    id: 'cert-9',
+    name: '환경산업기사',
+    category: '산업기사',
+    issuer: '한국산업인력공단',
+    difficulty: 'hard',
+    passingRate: '30%',
+    examFee: '31,800원',
+    relevantFields: ['정유', '석화', '가스', '발전'],
+  },
+  {
+    id: 'cert-10',
+    name: '화공기술사',
+    category: '기술사',
+    issuer: '한국산업인력공단',
+    difficulty: 'hard',
+    passingRate: '18%',
+    examFee: '60,000원',
+    relevantFields: ['석화', '배터리'],
+  },
+];
+
+// ===== 사용자 자격증 (현재 보유) =====
+export const USER_CERTIFICATIONS: UserCertification[] = [
+  {
+    id: 'user-cert-1',
+    certificationId: 'cert-1',
+    certificationName: '산업안전기능사',
+    acquiredDate: '2025-12-15',
+    status: 'acquired',
+  },
+  {
+    id: 'user-cert-2',
+    certificationId: 'cert-4',
+    certificationName: '기계기능사',
+    acquiredDate: '2025-10-20',
+    status: 'acquired',
+  },
+];
+
+// ===== 자격증 취득 루트 (추천 경로) =====
+export const CERTIFICATION_ROUTES: CertificationRoute[] = [
+  {
+    id: 'route-1',
+    title: '안전전문가 루트',
+    description: '산업안전 분야 전문가로 성장하는 경로. 기능사부터 기술사까지 단계적 학습.',
+    targetSectors: ['정유', '석화', '가스', '발전'],
+    route: ['cert-1', 'cert-2', 'cert-8', 'cert-9'],
+    estimatedDuration: '18-24개월',
+    difficulty: 'intermediate',
+    priority: 1,
+  },
+  {
+    id: 'route-2',
+    title: '공정엔지니어 루트',
+    description: '화학 공정 전문가로 성장하는 경로. 화학 및 기계 기초 위에 고급 기술 습득.',
+    targetSectors: ['석화', '배터리'],
+    route: ['cert-4', 'cert-3', 'cert-6', 'cert-10'],
+    estimatedDuration: '24-30개월',
+    difficulty: 'advanced',
+    priority: 2,
+  },
+  {
+    id: 'route-3',
+    title: '발전설비관리 루트',
+    description: '발전소 설비 운영 및 관리 전문가 경로. 전기 및 안전 지식 필수.',
+    targetSectors: ['발전'],
+    route: ['cert-5', 'cert-1', 'cert-8'],
+    estimatedDuration: '15-20개월',
+    difficulty: 'intermediate',
+    priority: 3,
+  },
+  {
+    id: 'route-4',
+    title: '반도체공정기술자 루트',
+    description: '반도체 공정 기술자로 성장하는 경로. IT 기초 위에 화학/전기 지식 추가.',
+    targetSectors: ['반도체', '배터리'],
+    route: ['cert-7', 'cert-5', 'cert-3'],
+    estimatedDuration: '12-18개월',
+    difficulty: 'intermediate',
+    priority: 4,
+  },
+  {
+    id: 'route-5',
+    title: '기본 취업자격 루트',
+    description: '대부분 기업에서 선호하는 기본 자격증 조합. 신입 취업 시 필수.',
+    targetSectors: ['정유', '석화', '가스', '배터리', '발전', '반도체'],
+    route: ['cert-4', 'cert-1', 'cert-7'],
+    estimatedDuration: '9-12개월',
+    difficulty: 'beginner',
+    priority: 0,
+  },
 ];
 

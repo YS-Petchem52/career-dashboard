@@ -111,3 +111,34 @@ export interface ApplicationRecord {
   applicantName: string;
   school: string;
 }
+
+// ===== 자격증 관련 인터페이스 =====
+export interface Certification {
+  id: string;
+  name: string; // 자격증명 (예: 산업안전기능사)
+  category: string; // 분류 (기능사, 기사, 산업기사, 운전면허 등)
+  issuer: string; // 발급 기관 (예: 한국산업인력공단)
+  difficulty: 'easy' | 'medium' | 'hard'; // 난이도
+  passingRate: string; // 합격률 (예: '45%')
+  examFee: string; // 응시료 (예: '26,000원')
+  relevantFields: string[]; // 관련 분야 (예: ['정유', '석화', '안전'])
+}
+
+export interface UserCertification {
+  id: string;
+  certificationId: string;
+  certificationName: string;
+  acquiredDate?: string; // 취득일 (YYYY-MM-DD)
+  status: 'acquired' | 'scheduled' | 'recommended'; // 보유/응시예정/추천
+}
+
+export interface CertificationRoute {
+  id: string;
+  title: string; // 경로명 (예: "안전전문가 루트")
+  description: string;
+  targetSectors: string[]; // 목표 분야
+  route: string[]; // 자격증 ID 순서
+  estimatedDuration: string; // 예상 기간 (예: "12-18개월")
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  priority: number; // 추천 우선순위
+}
