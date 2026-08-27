@@ -91,7 +91,7 @@ export default function RecommendationScreen({ companies, onSelectCompany }: Rec
   }, [companies, selectedSectors, selectedCharacteristics]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pb-20">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pb-24">
       {/* 헤더 */}
       <div className="bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-4">

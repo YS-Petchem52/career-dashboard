@@ -31,7 +31,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   const meisterJobs = jobs.filter((j) => j.isMeisterRecommended || j.tags.includes('#MeisterHighSchool') || j.educationReq.includes('고졸'));
 
   return (
-    <div id="home-screen-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-12">
+    <div id="home-screen-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-24">
       {/* Search Bar Section */}
       <section className="mb-6">
         <div className="relative w-full">

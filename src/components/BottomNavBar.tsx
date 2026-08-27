@@ -11,7 +11,7 @@ export const BottomNavBar: React.FC<BottomNavBarProps> = ({ activeTab, onChangeT
   return (
     <nav
       id="bottom-nav-bar"
-      className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-[#f9f9ff] border-t border-[#c3c6d6]/60 shadow-[0_-2px_10px_rgba(0,0,0,0.03)]"
+      className="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-[#f9f9ff] border-t border-[#c3c6d6]/60 shadow-[0_-2px_10px_rgba(0,0,0,0.03)]"
     >
       {/* Home Tab */}
       <button

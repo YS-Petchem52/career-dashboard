@@ -92,7 +92,7 @@ export const SearchScreen: React.FC<SearchScreenProps> = ({
   }, [jobs, selectedCategory, searchQuery, selectedLocation, selectedCareer, selectedSalary]);
 
   return (
-    <div id="search-screen-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-20">
+    <div id="search-screen-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-24">
       {/* Search Input Filter */}
       <div className="mb-4">
         <div className="relative w-full">

@@ -25,7 +25,7 @@ export const MyPageScreen: React.FC<MyPageScreenProps> = ({
   const [meisterFilterOnly, setMeisterFilterOnly] = useState(true);
 
   return (
-    <div id="mypage-screen-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-20">
+    <div id="mypage-screen-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-24">
       {/* Profile Card */}
       <section className="bg-[#ffffff] rounded-xl border border-[#c3c6d6]/40 p-5 mb-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div className="flex items-center gap-4">

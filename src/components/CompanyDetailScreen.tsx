@@ -57,7 +57,7 @@ export const CompanyDetailScreen: React.FC<CompanyDetailScreenProps> = ({
   };
 
   return (
-    <div id="company-detail-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-24 md:pb-12">
+    <div id="company-detail-container" className="max-w-[1200px] mx-auto px-5 md:px-6 pt-4 pb-24">
       {/* Quick Company Switcher Bar */}
       <div className="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-3 mb-4 border-b border-[#c3c6d6]/30">
         <span className="text-xs font-semibold text-[#737685] shrink-0 mr-1">다른 기업 보기:</span>
