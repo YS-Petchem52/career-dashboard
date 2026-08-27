@@ -126,8 +126,8 @@ export default function CertificationScreen({
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {acquiredCerts.map((cert) => {
-                // cert-12(컴퓨터활용능력 2급)는 필기 자격증 (파란색)
-                const isWrittenTest = cert.id === 'cert-12';
+                // 필기 자격증 (파란색): 산업기사들과 필기 시험
+                const isWrittenTest = ['cert-7', 'cert-9', 'cert-10', 'cert-11', 'cert-12'].includes(cert.id);
                 return (
                   <div
                     key={cert.id}
