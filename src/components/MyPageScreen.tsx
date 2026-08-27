@@ -40,7 +40,7 @@ export const MyPageScreen: React.FC<MyPageScreenProps> = ({
               </span>
             </div>
             <p className="text-xs text-[#434654] mt-0.5">
-              여수석유화학고등학교 공정운전과 (2027년 2월 졸업예정)
+              여수석유화학고등학교 공정운전과 (2028년 2월 졸업예정)
             </p>
             <div className="flex gap-1.5 mt-2">
               <span className="text-[11px] bg-[#e8edff] text-[#003d9b] px-2 py-0.5 rounded font-medium">

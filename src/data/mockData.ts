@@ -1744,8 +1744,9 @@ export const USER_CERTIFICATIONS: UserCertification[] = [
   {
     id: 'user-cert-11',
     certificationId: 'cert-12',
-    certificationName: '컴퓨터활용능력 2급',
-    status: 'scheduled',
+    certificationName: '컴퓨터활용능력 2급 필기',
+    acquiredDate: '2025-12-10',
+    status: 'acquired',
   },
 ];
 
