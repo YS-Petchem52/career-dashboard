@@ -9,6 +9,7 @@ export interface Company {
   location: string;
   isPopularRank?: number;
   description: string;
+  businessProcess?: string; // 사업/공정 상세 설명
   stats: {
     employees: string;
     avgSalary: string;
